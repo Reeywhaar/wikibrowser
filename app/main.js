@@ -7,6 +7,9 @@ let mainWindow;
 const preferences = new Preferences();
 
 let transformHandler = tools.debounce(function(e){
+	if(mainWindow.fullscreen === true){
+		return;
+	};
 	preferences.set('window-bounds', mainWindow.getBounds());
 }, 200);
 
@@ -30,10 +33,10 @@ function createWindow() {
   });
 	mainWindow.on("resize", transformHandler);
 	mainWindow.on("move", transformHandler);
-	mainWindow.on("enter-fullscreen", function(){
+	mainWindow.on("enter-full-screen", function(){
 		preferences.set("window-mode-fullscreen", true);
 	});
-	mainWindow.on("leave-fullscreen", function(){
+	mainWindow.on("leave-full-screen", function(){
 		preferences.set("window-mode-fullscreen", false);
 	});
 }

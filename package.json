@@ -11,10 +11,7 @@
 		"build": "build --mac"
   },
   "keywords": [
-    "Electron",
-    "quick",
-    "start",
-    "tutorial"
+    "Electron"
   ],
   "build": {
     "appId": "com.vyrtsev.wikibrowser",
