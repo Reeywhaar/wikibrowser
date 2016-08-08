@@ -1,0 +1,17 @@
+.mw-body-content{
+	font-family: Georgia, serif;
+}
+
+#content.mw-body{
+	font-family: Georgia, serif!important;
+	font-size:1.5rem;
+}
+
+.content, .pre-content, .post-content{
+	max-width:40em!important;
+}
+
+.google-search{
+	font-size: 1rem;
+	display:block;
+}

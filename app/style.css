@@ -1,0 +1,91 @@
+html, body{
+	margin:0;
+	padding:0;
+}
+
+html{
+	font-family: Helvetica, sans-serif;
+}
+
+@keyframes an-add{
+	from {background-color: hsl(200, 50%, 50%);}
+	to {background-color: hsl(0,0%,95%);}
+}
+
+.button{
+	cursor:pointer;
+}
+
+.content{
+	display:flex;
+	flex-wrap:nowrap;
+}
+
+.nav-bar{
+	display:flex;
+	align-items: center;
+	height:30px;
+	padding:2px 4px;
+	background-color: hsl(0,0%,95%);
+	width:100vw;
+	box-sizing: border-box;
+}
+
+.nav-bar > .item{
+	margin-left:4px;
+	margin-right:4px;
+}
+
+.location{
+	padding:4px;
+	box-shadow: inset 0px 0px 1px rgba(0,0,0,.4);
+	border-radius: 2px;
+	flex:1;
+	background: rgba(255,255,255,.8);
+	overflow: scroll;
+	font-size: .8rem;
+}
+
+.wiki{
+	flex:1;
+}
+
+.tab-bar{
+	width:200px;
+	height:calc(100vh - 34px);
+	background:hsl(0,0%,95%);
+	/*display:flex;*/
+	/*flex-direction: column;*/
+	overflow:scroll;
+	font-size: .8rem;
+}
+
+.tab-bar.an-add{
+	animation-name: an-add;
+	animation-duration: 1s;
+	animation-iteration-count: 1;
+	animation-timing-function: ease;
+}
+
+.tab{
+	border-bottom: 1px solid rgba(0,0,0,.1);
+	padding:4px;
+	cursor:pointer;
+	display:flex;
+	flex-wrap: nowrap;
+	align-items: center;
+}
+
+.tab a{
+	color:rgba(0,0,0,.6);
+	text-decoration: none;
+	flex:1;
+}
+.tab.current a{
+	color:hsl(200,70%,40%);
+}
+
+.tab a:hover{
+	color:rgba(0,0,0,.8);
+	text-decoration: underline;
+}

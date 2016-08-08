@@ -1,0 +1,14 @@
+{
+  "name": "wikibrowser",
+	"productName": "WikiBrowserDev",
+  "version": "1.0.0",
+  "description": "Wikipedia Browser",
+  "main": "main.js",
+  "keywords": [
+    "Electron"
+  ],
+  "author": "Vyrtsev",
+  "dependencies": {
+    "vue": "^1.0.26"
+  }
+}

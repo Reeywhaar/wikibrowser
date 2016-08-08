@@ -1,0 +1,33 @@
+{
+  "name": "wikibrowser",
+  "version": "1.0.0",
+  "description": "Wikipedia Browser",
+  "main": "main.js",
+  "scripts": {
+    "clean": "rm -r node_modules && cd ./app && rm -r node_modules",
+    "prune": "npm prune && cd ./app && npm prune",
+    "sinstall": "npm install && cd ./app && npm install",
+    "start": "export WIKIDEBUG=true && electron ./app/",
+		"build": "build --mac"
+  },
+  "keywords": [
+    "Electron",
+    "quick",
+    "start",
+    "tutorial"
+  ],
+  "build": {
+    "appId": "com.vyrtsev.wikibrowser",
+    "app-category-type": "public.app-category.reference",
+    "productName": "WikiBrowser",
+		"mac": {
+			"target": "dmg"
+		}
+  },
+  "license": "BSD",
+  "author": "Vyrtsev",
+  "devDependencies": {
+    "electron-prebuilt": "^1.2.0",
+    "electron-builder": "^5.12.1"
+  }
+}
