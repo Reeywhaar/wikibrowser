@@ -1,0 +1,1 @@
+Electron app to browse wikipedia. Don't expect something great.
