@@ -4,11 +4,12 @@
   "version": "1.0.0",
   "description": "Wikipedia Browser",
   "main": "main.js",
-  "keywords": [
-    "Electron"
-  ],
   "author": "Vyrtsev",
+	"license": "BSD",
   "dependencies": {
     "vue": "^1.0.26"
-  }
+  },
+  "keywords": [
+    "Electron"
+  ]
 }

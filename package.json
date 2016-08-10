@@ -8,7 +8,7 @@
     "prune": "npm prune && cd ./app && npm prune",
     "sinstall": "npm install && cd ./app && npm install",
     "start": "export WIKIDEBUG=true && electron ./app/",
-		"build": "build --mac"
+		"build": "build --dir"
   },
   "keywords": [
     "Electron"
